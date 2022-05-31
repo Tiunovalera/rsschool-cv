@@ -44,6 +44,25 @@ Making a convenient, functional and accesible sites is what i really like. And i
 
 ---
   
+
+### Code example
+
+function sumOfDifferences(arr) {
+  if(arr.length < 2)
+    return 0
+  
+  arr.sort((a, b) => a - b).reverse()
+  
+  diffs = []
+  for(let i = 0; i < arr.length; i++){
+    diffs.push(arr[i] - arr[i + 1])
+  }
+  diffs.pop()
+  return diffs.reduce((a, b) => a + b)
+}
+
+
+---  
 ### Languages
 
 - English - pre-Intermediate
