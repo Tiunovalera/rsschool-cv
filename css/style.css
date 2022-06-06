@@ -310,6 +310,18 @@ a{
   padding: 100px 0 50px 0;
 }
 
+
+.code__keyword{
+  color: #134597a7;
+}
+
+.code__name{
+  color: #094b61a7;
+}
+
+
+
+
 /*LANGUAGES--------------------*/
 
 .languages__title{
