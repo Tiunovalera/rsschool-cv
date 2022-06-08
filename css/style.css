@@ -100,9 +100,28 @@ a{
 .nav-list__item{
   font-family: "Oswald", sans-serif;
   font-size: 20px;
-
 }
 
+.nav-list__item a{
+  display: inline-block;
+  line-height: 1.5;
+}
+
+
+.nav-list__item a::after{
+  background-color: var(--accent-color);
+  display: block;
+  content: "";
+  height: 2px;
+  width: 0%;
+  transition: width 0.3s ease-in-out;
+}
+
+.nav-list__item a:hover:after,
+.nav-list__item a:focus:after{
+  width: 100%;
+}
+  
 
 
 /*INTRO------------------------*/
