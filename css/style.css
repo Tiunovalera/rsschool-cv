@@ -29,7 +29,6 @@ body{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- 
 }
 
 
@@ -81,14 +80,10 @@ a{
   right: -20px;
 }
 
-
-
-
 /*HEADER-------------------*/
 
-
 .header__container{
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 }
 
 .nav-list{
@@ -107,7 +102,6 @@ a{
   line-height: 1.5;
 }
 
-
 .nav-list__item a::after{
   background-color: var(--accent-color);
   display: block;
@@ -122,15 +116,15 @@ a{
   width: 100%;
 }
   
-
-
 /*INTRO------------------------*/
+
 .intro__container{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 110px;
+  margin-top: 80px;
   margin-bottom: 160px;
+
 }
 
 .intro__photo{
