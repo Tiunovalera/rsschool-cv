@@ -49,8 +49,6 @@ a{
   width: 50%;
   margin: auto;
   max-width: 720px;
-  padding-bottom: 60px;
-
 }
 
 .title{
@@ -58,6 +56,7 @@ a{
   font-family: 'Oswald', sans-serif;
   text-align: center; 
   color: var(--accent-color);
+  padding: 30px 0;
 }
 
 .title::before,
@@ -73,12 +72,12 @@ a{
 }
 
 .title::before{
-  margin-left: -100%;
+  margin-left: -60%;
   left: -20px;
 }
 
 .title::after{
-  margin-right: -100%;
+  margin-right: -60%;
   right: -20px;
 }
 
@@ -170,8 +169,8 @@ a{
   margin-bottom: 150px;
 }
 
-.skills__title{
-  padding: 30px 0;
+.skills__title-block{
+  padding-bottom: 60px;
 }
 
 .skills__list{
@@ -235,8 +234,8 @@ a{
   margin-bottom: 100px;
 }
 
-.courses__title{
-  padding-top: 30px;
+.courses__title-block{
+  padding-bottom: 40px;
 }
 
 .courses__list{
@@ -260,11 +259,11 @@ a{
 /*WORKS----------------------*/
 
 .works__container{
-  margin-bottom: 60px;
+  margin-bottom: 150px;
 }
 
-.works__title{
-  padding: 30px 0;
+.works__title-block{
+  padding-bottom: 50px;
 }
 
 .works__list{
@@ -282,22 +281,22 @@ a{
 }
 
 .works__list__item:nth-child(1){
-  background: linear-gradient( 90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100% ), url(../assets/img/botanika.png) no-repeat;
+  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(102, 194, 244, 0.65) 100%), url(../assets/img/botanika.png) no-repeat;
   background-size: cover;
 }
 
 .works__list__item:nth-child(2){
-  background: linear-gradient( 90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100% ), url(../assets/img/delivery.png) no-repeat;
+  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/delivery.png) no-repeat;
   background-size: cover;
 }
 
 .works__list__item:nth-child(3){
-  background: linear-gradient( 90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100% ), url(../assets/img/index.png) no-repeat;
+  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/index.png) no-repeat;
   background-size: cover;
 }
 
 .works__list__item:nth-child(4){
-  background: linear-gradient( 90deg, rgba(0, 0, 0, 0.43) 40.45%, rgba(0, 0, 0, 0) 100% ), url(../assets/img/js.png) no-repeat;
+  background: linear-gradient(to right, rgba(7, 73, 92, 0.5) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/js.png) no-repeat;
   background-size: cover;
 }
 
@@ -308,72 +307,121 @@ a{
 
 .item__desc{
   position: absolute;
-  top: 50px;
+  top: 20px;
   left: 10px;
-  max-width: 200px;
 }
 
 .item__desc__title{
   font-size: 20px;
   margin-bottom: 10px;
+  font-family: 'Oswald', sans-serif;
 }
 
 .item__desc__tools{
-
+  font-size: 15px;
 }
 
 /*CODE-------------------------*/
 
-.code__title{
-  padding: 100px 0 50px 0;
+.code__container{
+  margin-bottom: 50px;
 }
 
+.code__title-block{
+  padding-bottom: 30px;
+}
+
+.code__subtittle{
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Oswald', sans-serif;
+
+}
+
+.code__block{
+  display: flex;
+  justify-content: center;
+}
 
 .code__keyword{
-  color: #134597a7;
+  color: #d44c12;
 }
 
-.code__name{
-  color: #094b61a7;
+.code__function-title{
+  color: #2bee6f;
 }
 
-
+.code__logic-operator{
+  color: #f5da57;
+}
 
 
 /*LANGUAGES--------------------*/
 
-.languages__title{
-  padding: 100px 0 50px 0;
+.languages__title-block{
+  padding-bottom: 30px;
 }
 
+.languages__container{
+  margin-bottom: 140px;
+}
 
 .languages__list{
-  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
 }
+
+.languages__item::marker{
+  color: var(--accent-color);
+}
+
+.languages__item{
+  font-size: 22px;
+}
+
+.languages__item:not(:last-child){
+  margin-bottom: 10px;
+}
+
 
 /*FOOTER---------------*/
 
 .footer{
-
+  padding: 20px 0;
+  background: var(--accent-color);
 }
 
 .footer__social-list{
   list-style: none;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: center;
   margin-bottom: 20px;
-}
-
-.footer__social-item__img{
-  width: 50px;
-  height: 50px;
 }
 
 .footer__social-item{
 
 }
 
+.footer__icon{
+  width: 50px;
+  height: 50px;
+  fill: var(--light-text);
+}
+
+.rss__icon{
+  width: 70px;
+  height: 60px;
+}
+
+.tg__icon{
+  width: 40px;
+  height: 40px;
+}
+
 .footer__author{
   text-align: center;
   font-family: 'Oswald', sans-serif;
+  color: var(--light-text);
 }
