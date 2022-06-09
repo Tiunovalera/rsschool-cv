@@ -211,11 +211,11 @@ a{
 }
 
 .html-progress{
-  width: 80%;
+  width: 90%;
 }
 
 .css-progress{
-  width: 80%;
+  width: 90%;
 }
 
 .js-progress{
@@ -223,11 +223,11 @@ a{
 }
 
 .figma-progress{
-  width: 60%;
+  width: 70%;
 }
 
 .git-progress{
-  width: 50%;
+  width: 60%;
 }
 
 .vs-progress{
@@ -283,7 +283,9 @@ a{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
+  place-items: center;
 }
+
 
 .works__list__item{
   box-shadow: 10px 10px 15px var(--light-color);
@@ -291,41 +293,46 @@ a{
   height: 200px;
   border-radius: 10px;
   list-style: none;
-}
+  cursor: pointer;
 
-.works__list__item:nth-child(1){
-  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(102, 194, 244, 0.65) 100%), url(../assets/img/botanika.png) no-repeat;
-  background-size: cover;
-}
-
-.works__list__item:nth-child(2){
-  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/delivery.png) no-repeat;
-  background-size: cover;
-}
-
-.works__list__item:nth-child(3){
-  background: linear-gradient(to right, rgba(7, 73, 92, 0.75) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/index.png) no-repeat;
-  background-size: cover;
-}
-
-.works__list__item:nth-child(4){
-  background: linear-gradient(to right, rgba(7, 73, 92, 0.5) 0%, rgba(73, 176, 232, 0.65) 100%), url(../assets/img/js.png) no-repeat;
-  background-size: cover;
 }
 
 .works__list__link{
   position: relative;
-  color: var(--light-text);
+
+}
+
+.works__list__link::before{
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+  opacity: 0.65;
+  z-index: 2;
+}
+
+.item__img{
+  display: block;
+  object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
 }
 
 .item__desc{
   position: absolute;
   top: 20px;
   left: 10px;
+  color: var(--light-text);
+  z-index: 5;
 }
 
 .item__desc__title{
-  font-size: 20px;
+  font-size: 24px;
   margin-bottom: 10px;
   font-family: 'Oswald', sans-serif;
 }
@@ -411,10 +418,6 @@ a{
   justify-content: space-around;
   align-items: center;
   margin-bottom: 20px;
-}
-
-.footer__social-item{
-
 }
 
 .footer__icon{
