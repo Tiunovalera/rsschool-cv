@@ -294,12 +294,11 @@ a{
   border-radius: 10px;
   list-style: none;
   cursor: pointer;
-
 }
 
 .works__list__link{
   position: relative;
-
+ 
 }
 
 .works__list__link::before{
@@ -321,6 +320,7 @@ a{
   object-fit: cover;
   border-radius: 10px;
   width: 100%;
+  height: 100%;
 }
 
 .item__desc{
@@ -441,3 +441,37 @@ a{
   font-family: 'Oswald', sans-serif;
   color: var(--light-text);
 }
+
+
+/*ScrollTop*/
+
+#ScrollTop{
+  position: fixed;
+  right: 30px;
+  bottom: 130px;
+  background: url(../assets/svg/arrow.svg);
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  border: 15px solid var(--accent-color);
+  border-radius: 50%;
+  background-color: var(--accent-color);
+  z-index: 100;
+  cursor: pointer;
+}
+
+#ScrollTop:hover{
+  background-color: #5DC8CD;
+  border: 15px solid #5DC8CD;
+
+}
+
+.showBtn{
+  opacity: 1;
+  transition: 0.6s;
+}
+
+.showBtn__hide{
+  opacity: 0;
+}
+
