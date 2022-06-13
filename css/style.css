@@ -3,7 +3,7 @@
   --light-text: #ffffff;
   --accent-color: #358486; 
   --light-color: #eceaea;
-  
+  --hover-color: #006064;
   
 }
 
@@ -160,19 +160,23 @@ a{
 }
 
 .info__button{
-  padding: 0.8rem 1rem;
+  padding: 0.8rem 2rem;
   border-radius: 10px;
   font-size: 14px;
   border: 1px solid var(--primary-text);
   font-style: italic;
   font-weight: 700;
-}
-
-.info__button-contact{
   background-color: var(--accent-color);
   color: var(--light-text);
   border: 1px solid var(--accent-color);
   margin-right: 15px;
+}
+
+.info__button:hover{
+  background-color: var(--accent-color);
+  border: none;
+  transition: 1s;
+  color: var(--light-text);
 }
 
 /*SKILLS------------------------*/
@@ -298,7 +302,6 @@ a{
 
 .works__list__link{
   position: relative;
- 
 }
 
 .works__list__link::before{
@@ -408,7 +411,7 @@ a{
 /*FOOTER---------------*/
 
 .footer{
-  padding: 20px 0;
+  padding: 9px 0;
   background: var(--accent-color);
 }
 
@@ -424,6 +427,11 @@ a{
   width: 50px;
   height: 50px;
   fill: var(--light-text);
+}
+
+.footer__icon:hover{
+  fill: var(--hover-color);
+  transition: 0.7s;
 }
 
 .rss__icon{
@@ -443,12 +451,12 @@ a{
 }
 
 
-/*ScrollTop*/
+/*ScrollTop-----------------------*/
 
 #ScrollTop{
   position: fixed;
   right: 30px;
-  bottom: 130px;
+  bottom: 150px;
   background: url(../assets/svg/arrow.svg);
   background-size: contain;
   width: 20px;
@@ -461,8 +469,8 @@ a{
 }
 
 #ScrollTop:hover{
-  background-color: #5DC8CD;
-  border: 15px solid #5DC8CD;
+  background-color: var(--hover-color);
+  border: 15px solid var(--hover-color);
 
 }
 
